@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.greenzone.com</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+        }
+        nav{
+            
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: green;
+            font-size: 20px;
+            flex-wrap: wrap;
+            color: antiquewhite;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            animation-name: navbar;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            z-index: 1;    
+        }
+        @keyframes navbar{
+            from{top: -100px;}
+            to{top:0px}
+        }
+
+        .navl{
+            flex-grow: 1;
+            /* border: 2px black solid; */
+            background-color: darkgreen;
+            margin-right: 20px;
+
+        }
+        .navr{
+            flex-grow: 4;
+            /* border: 2px black solid; */
+            margin-right: 20px;
+
+        }
+        h1{
+            
+        }
+        ul li{
+            display: inline;
+            cursor: pointer;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        li:hover{
+            color: #fff000;
+
+            
+        }
+        .page1 .pagetop{
+            width: 100%;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .page1 .page1L{
+            width: 50%; 
+            height: 300px;
+            flex-wrap: wrap;
+            background-color: green;
+            display: flex;
+            /* flex-wrap: 1; */
+
+        }
+        .page1 .page1R{
+            width: 50%; 
+            height: 300px;
+            flex-wrap: wrap;
+            background-color: rgb(5, 167, 5);
+            display: flex;
+
+        }
+        .lr{
+            width: 100%;
+            display: flex;
+        }
+        /* @media Screen and (max-width:600px){
+            .lr{
+            flex-direction: column;
+
+        }
+    } */
+        .topinside{
+            width: 100%;
+            height: 100%;
+            /* background-color: gray; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: green;
+            padding: 20px; 
+            text-align: center;
+            animation: welcome;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            z-index: 0;
+            position: relative;
+
+        }
+        @keyframes welcome {
+                from{top: -100px; color: lightgreen; }
+                to{top: 0px; }
+            
+        }
+        .pagetop{
+
+        }
+        .page1Lin img{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-grow: 1;
+
+
+            
+        }
+        .page1Lin{
+            /* border: 2px solid yellow; */
+            /* width: px; */
+            /* height: 300px; */
+            
+
+        }
+        .pageLin2{
+            flex-grow: 1;
+            width: 300px;
+        }
+        .page1Rin img{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+        .page1Lin2{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            
+        }
+        .page1Rin2{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        
+        }
+        .page1Rin2{
+            flex-grow: 1;
+            width: 300px;
+        }
+        button{
+            
+            background-color: #fff000;
+            border-radius: 12px;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px 15px;
+            text-align: center;
+            border: 0;
+            font-size: 16px;
+            text-decoration: none;
+            transition-property: background-color font-size;
+            transition-duration: 1s;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            
+
+        }
+        button:hover{
+            background-color: white;
+            font-size: 18px;
+        }
+        #home{
+            
+            color: #fff000;
+            
+        }
+        a{
+        text-decoration: none;
+        color: #000;
+        }
+        .lr{
+            position: relative;
+            z-index: 3;
+            animation: down 2s ease;
+
+        }
+        @keyframes down {
+            from{top:100px}
+            to{top:0px}
+        }
+        nav a{
+            color: white;
+        }
+        nav a:hover{
+            color: #fff000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navl"><h1>GREEN ZONE</h1></div>
+        <div class="navr"><ul>
+            <!-- <li id="home">Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>Gallery</li> -->
+            <li id="home"><a href="final home copy.html">Home</a> </li>
+            <li id="about"><a href="aboutus.html">About Us</a></li>
+            <li id="Services"><a href="finalfarmarpage.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="custamerpage.html">Buy product</a></li>
+        </ul></div>
+    </nav>
+    <div class="page1">
+        <div class="pagetop">
+            <div class="topinside">
+                <h1>welcome to <span id="head">GREEN ZONE</span> !</h1>
+                <P>"Empowering farmers with knowledge and tools for a prosperous tomorrow. Join our community and stay ahead in the field of agriculture."</P>
+            </div>
+        </div>
+        <div class="lr">
+        <div class="page1L"><div class="page1Lin"><img src="images/former.png" alt=""></div><div class="page1Lin2"> <h1>Former login here</h1><button> <a href="index.html"> Farmer</a></button></div></div>
+        <div class="page1R"><div class="page1Rin"><img src="images/public.png" alt=""></div><div class="page1Rin2"> <h1>Customer login here</h1><button> <a href="index.html"> Customer</a></button></div></div>
+    </div>
+        </div>
+
+    
+</body>
+</html>
+
+

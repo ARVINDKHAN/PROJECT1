@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view product</title>
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+        }
+        nav{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: green;
+            font-size: 20px;
+            flex-wrap: wrap;
+            color: antiquewhite;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            animation-name: navbar;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            z-index: 1;    
+        }
+        @keyframes navbar{
+            from{top: -100px;}
+            to{top:0px}
+        }
+
+        .navl{
+            flex-grow: 1;
+            /* border: 2px black solid; */
+            background-color: darkgreen;
+            margin-right: 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+        }
+        .navr{
+            flex-grow: 4;
+            /* border: 2px black solid; */
+            margin-right: 20px;
+
+        }
+        h1{
+            
+        }
+        ul li{
+            display: inline;
+            cursor: pointer;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        li:hover{
+            color: #fff000;
+
+            
+        }
+        #Services{
+            color: #fff000;
+        }
+        .container{
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: khan 3s ease-out;
+            position: relative;
+            
+        }
+        @keyframes khan {
+            from{
+                top: -100px;
+            }
+            to{
+                top:0px;
+            }
+        }
+         .box{
+            margin: 10px;
+            width: 250px;
+            height: 250px; 
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            justify-content: center;
+            flex-direction: row;
+
+            align-items: center;
+
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        .ser{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            align-items: center; 
+            
+        }
+        .order{
+            margin-left: 50px;
+
+        }
+        .order button{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            border-radius: 10px;
+        }
+        button{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        input{
+            width: 60%;
+            height: 40px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 0px solid white;
+            color: green;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        .c{position: relative;
+            bottom: 10px;
+             width: 100%;
+            /*height: 100px; */
+            background-color: rgb(4, 148, 4);
+            color: white;
+            text-align: center;
+            
+        }
+        button{
+            background-color: #fff000;
+            border: 0;
+            padding: 5px;
+            
+        }
+        a{
+        text-decoration: none;
+        color: white;
+       }
+       a:hover{
+        color: #fff000;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navl"><h1>GREEN ZONE</h1></div>
+        <div class="navr"><ul>
+            <!-- <li id="home">Home</li>
+            <li id="about">About Us</li>
+            <li id="Services">Services</li>
+            <li>Contact Us</li>
+            <li></li> -->
+            <li id="home"><a href="final home copy.html">Home</a> </li>
+            <li id="about"><a href="aboutus.html">About Us</a></li>
+            <li id="Services"><a href="finalfarmarpage.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="custamerpage.html">Buy product</a></li>
+        </ul></div>
+    </nav>
+    <div class="ser"><input type="search" placeholder="search"> <div class="order"><button>Buy Added Items</button></div></div>
+    <div class="container">
+        <div class="box1 box"> <div> <img src="images/fruits/pngegg (10).png" alt=""> </div><div class="c"><h1>10 Rs 1Q</h1> <button>add</button></div></div>
+        <div class="box2 box"> <div> <img src="images/fruits/pngegg (11).png" alt=""></div><div class="c"><h1>80 Rs 1kg</h1><button>add</button></div> </div>
+        <div class="box3 box"> <div><img src="images/fruits/pngegg (12).png" alt=""></div><div class="c"><h1>120 Rs 1kg</h1><button>add</button></div></div>
+        <div class="box4 box"><div> <img src="images/fruits/pngegg (13).png" alt=""></div><div class="c"><h1>10 Rs 1pic</h1><button>add</button></div></div>
+        <div class="box5 box"><div><img src="images/fruits/pngegg (14).png" alt=""></div><div class="c"><h1>70 Rs 1kg</h1><button>add</button></div></div>
+        <div class="box6 box"><div> <img src="images/fruits/pngegg (16).png" alt=""></div><div class="c"><h1>120 Rs 1lit</h1><button>add</button></div></div>
+        <div class="box7 box"> <div>   <img src="images/fruits/pngegg (15).png" alt=""></div><div class="c"><h1>50Rs 1kg</h1><button>add</button></div></div>
+        <div class="box8 box"> <div>  <img src="images/fruits/pngegg (17).png" alt=""></div><div class="c"><h1>200 Rs 1kg</h1><button>add</button></div></div>
+        <div class="box9 box"><div>  <img src="images/fruits/pngegg (18).png" alt=""></div><div class="c"><h1>40 Rs 1kg</h1><button>add</button></div></div>
+        <div class="box10 box"> <div> <img src="images/fruits/pngegg (20).png" alt=""></div><div class="c"><h1>20 Rs 1kg</h1><button>add</button></div></div>
+
+    </div>
+</body>
+</html>

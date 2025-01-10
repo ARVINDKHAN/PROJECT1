@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+        }
+        nav{
+            
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: green;
+            font-size: 20px;
+            flex-wrap: wrap;
+            color: antiquewhite;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            animation-name: navbar;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            z-index: 1;    
+        }
+        @keyframes navbar{
+            from{top: -100px;}
+            to{top:0px}
+        }
+
+        .navl{
+            flex-grow: 1;
+            /* border: 2px black solid; */
+            background-color: darkgreen;
+            margin-right: 20px;
+
+        }
+        .navr{
+            flex-grow: 4;
+            /* border: 2px black solid; */
+            margin-right: 20px;
+
+        }
+        h1{
+            
+        }
+        ul li{
+            display: inline;
+            cursor: pointer;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        li:hover{
+            color: #fff000;
+
+            
+        }
+        #about{
+            color: #fff000;
+        }
+       .containar{
+        margin: 20px;
+        width: 100%;
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+       }
+       .in_container{
+        position: relative;
+        width: 80%;
+        border: 5px solid green;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        font-size: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: justify;
+        background-color: #fff000;
+        color: green;
+        animation: about 2s ease;
+       }
+       @keyframes about {
+        from{
+            top: -100px;
+
+        }
+        to{
+            top:0px;
+        }
+       }
+       a{
+        text-decoration: none;
+        color: white;
+       }
+       a:hover{
+        color: #fff000;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navl"><h1>GREEN ZONE</h1></div>
+        <div class="navr"><ul>
+            <!-- <li id="home">Home</li>
+            <li id="about">About Us</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>Gallery</li> -->
+            <li id="home"><a href="final home copy.html">Home</a> </li>
+            <li id="about"><a href="aboutus.html">About Us</a></li>
+            <li id="Services"><a href="finalfarmarpage.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="custamerpage.html">Buy product</a></li>
+        </ul></div>
+    </nav>
+    <div class="containar">
+        <div class="in_container">
+            <h1>About Us</h1>
+            <p>Welcome to Green Zoon, a thriving online marketplace dedicated to bridging the gap between farmers and consumers. Our mission is to empower farmers by providing them with a platform to showcase and sell their products directly to you, the customer, ensuring fresh and quality produce every time.
+
+                At Green Zoon, we believe in the importance of supporting local agriculture and promoting sustainable farming practices. Our website offers a diverse range of farm-fresh products, from fruits and vegetables to dairy and grains, all sourced directly from farmers who are passionate about their craft.
+                
+                Our Vision
+                Our vision is to create a community where farmers are valued for their hard work and consumers have access to nutritious, locally-grown food. We strive to make the farm-to-table experience seamless and transparent, fostering trust and connections between our farmers and customers.
+                
+                Why Choose Us?
+                Direct from Farmers: By purchasing through Green Zoon, you're directly supporting farmers and their families, ensuring they receive fair compensation for their produce.
+                
+                Fresh and Quality Produce: We prioritize freshness and quality, so you can enjoy farm-fresh products that are packed with nutrients.
+                
+                Sustainability: We are committed to promoting sustainable farming practices that protect our environment and ensure the long-term health of our soil.
+                
+                Join Us in Supporting Local Farmers
+                We invite you to explore our marketplace and discover the rich variety of products our farmers have to offer. Thank you for choosing Green Zoon and being a part of our mission to support local agriculture and sustainable living.
+                
+                Feel free to customize this content to better suit your brand's voice and any additional details you might want to include. Good luck with Green Zoon!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
